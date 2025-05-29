@@ -132,7 +132,5 @@ crewai run
 
 ```
 
----
 
-Se quiser, posso salvar isso como um arquivo `.md` para você baixar. Deseja que eu gere esse arquivo agora?
 ```
