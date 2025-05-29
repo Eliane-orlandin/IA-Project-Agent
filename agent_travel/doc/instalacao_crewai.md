@@ -1,4 +1,3 @@
-````md
 # Guia de Instalação e Uso do CrewAI
 
 Este guia mostra como instalar e configurar o CrewAI, uma ferramenta para criação de agentes de IA colaborativos.
@@ -15,7 +14,6 @@ Para verificar sua versão:
 ```bash
 python3 --version
 ```
-````
 
 ---
 
