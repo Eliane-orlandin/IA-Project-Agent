@@ -1,3 +1,7 @@
+Perfeito, Eliane! Aqui está o `README.md` atualizado com instruções para exportar o relatório como arquivo `.html` ou `.md` (com opção futura para conversão em PDF usando `pdfkit`):
+
+---
+
 # 🧠 Análise Automatizada de Mercado com CrewAI
 
 Este projeto utiliza a biblioteca [CrewAI](https://github.com/joaomdmoura/crewAI) para simular uma equipe de agentes autônomos que colaboram para realizar uma análise de mercado completa, automatizada e personalizada com base em um setor específico.
@@ -16,7 +20,9 @@ O projeto cria uma equipe com três agentes que trabalham em sequência:
 - Python 3.10+
 - [CrewAI](https://pypi.org/project/crewai/)
 - [python-dotenv](https://pypi.org/project/python-dotenv/)
-- [IPython (para exibição do relatório no Jupyter)](https://pypi.org/project/ipython/)
+- [IPython (para exibição em Jupyter Notebook)](https://pypi.org/project/ipython/)
+- [Markdown](https://pypi.org/project/Markdown/) (opcional, para salvar em HTML)
+- [pdfkit](https://pypi.org/project/pdfkit/) (opcional, para conversão posterior)
 
 ## 📁 Estrutura do Projeto
 
@@ -57,14 +63,37 @@ OPENAI_API_KEY=sua_chave_aqui
 resultado = crew.kickoff(inputs={"sector": "Inteligência Artificial"})
 ```
 
-### 2. Exiba o relatório completo no Jupyter:
+### 2. Exiba o relatório no Jupyter:
 
 ```python
 from IPython.display import display, Markdown
 display(Markdown(str(resultado)))
 ```
 
-Isso garantirá que o relatório final (em Markdown) seja exibido de forma estruturada e completa.
+---
+
+## 💾 Exportar o relatório
+
+### ➤ Gerar um arquivo HTML
+
+```python
+import markdown
+
+html = markdown.markdown(str(resultado))
+with open("relatório.html", "w", encoding="utf-8") as file:
+    file.write(html)
+```
+
+### ➤ Gerar um arquivo Markdown
+
+```python
+with open("relatório.md", "w", encoding="utf-8") as file:
+    file.write(str(resultado))
+```
+
+> 💡 Você pode posteriormente converter o arquivo `.md` em PDF usando ferramentas como `pdfkit` ou `pandoc`.
+
+---
 
 ## ✅ Exemplo de Saída
 
@@ -87,21 +116,10 @@ A Inteligência Artificial está em crescimento acelerado com aplicações em sa
 - Explorar parcerias com startups de IA
 ```
 
-## 📄 Funcionalidade Interna
-
-### Agentes
-
-- **Pesquisador de mercado**: coleta dados estratégicos.
-- **Analista de tendências**: interpreta os dados e identifica padrões.
-- **Redator de relatórios**: escreve o relatório final com recomendações.
-
-### Tarefas
-
-1. Coleta de dados
-2. Análise de tendências
-3. Redação do relatório
+---
 
 ## 📫 Contato
 
 **Desenvolvido por:** Eliane Orlandin
 **Repositório:** [IA-Project-Agent](https://github.com/Eliane-orlandin/IA-Project-Agent)
+**LinkIn:**[Eliane Orlandin](https://www.linkedin.com/in/eliane-orlandin-do-carmo-551b92246/)
