@@ -1,7 +1,3 @@
-Perfeito, Eliane! Aqui está o `README.md` atualizado com instruções para exportar o relatório como arquivo `.html` ou `.md` (com opção futura para conversão em PDF usando `pdfkit`):
-
----
-
 # 🧠 Análise Automatizada de Mercado com CrewAI
 
 Este projeto utiliza a biblioteca [CrewAI](https://github.com/joaomdmoura/crewAI) para simular uma equipe de agentes autônomos que colaboram para realizar uma análise de mercado completa, automatizada e personalizada com base em um setor específico.
@@ -29,11 +25,10 @@ O projeto cria uma equipe com três agentes que trabalham em sequência:
 ```text
 IA-Project-Agent/
 │
-├── crew_ai/                # Diretório principal do projeto
-│   └── main.py             # Script principal com definição dos agentes e tarefas
-├── .env                    # Variáveis de ambiente (não versionar)
-├── README.md               # Este arquivo
-└── requirements.txt        # Lista de dependências
+├── crew_ai/                    # Diretório principal do projeto
+│   └── main.py                 # Script principal com definição dos agentes e tarefas
+│   └── README.md               # Este arquivo
+│   └── requirements.txt        # Lista de dependências
 ```
 
 ## 📦 Instalação
