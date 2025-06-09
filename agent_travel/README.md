@@ -1,4 +1,3 @@
-````md
 # Planejador de Viagens com CrewAI
 
 Este projeto utiliza a biblioteca [CrewAI](https://docs.crewai.com/) para simular uma equipe autônoma de agentes de IA que colaboram para **planejar uma viagem completa pela Europa**, incluindo um roteiro diário e uma estimativa detalhada de orçamento.
@@ -42,7 +41,6 @@ Esses agentes trabalham em sequência, coordenados por uma `Crew` com processo s
 ```bash
 pip install crewai python-dotenv ipykernel
 ```
-````
 
 ### Executar
 
